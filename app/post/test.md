@@ -1,5 +1,3 @@
-# Object Document Mappers with ES6 Classes.
-
 For Node.js there are a ton of different object document mappers for mongo. The most popular is mongoose. 
 
 Mongoose is a great library but there has been a lot of advancements in Node.js in the past  or so year and it would be nice if a ODM worked well with these.

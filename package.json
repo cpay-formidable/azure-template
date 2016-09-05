@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --port 3000 --inline --hot",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -51,6 +51,7 @@
     "lodash": "^4.12.0",
     "markdown-loader": "^0.1.7",
     "node-sass": "^3.7.0",
+    "radium": "^0.18.1",
     "raw-loader": "^0.5.1",
     "react": "^15.0.2",
     "react-bootstrap": "^0.30.3",
