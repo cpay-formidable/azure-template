@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --port 3000 --inline --hot",
+    "start": "start http://localhost:3000/ & webpack-dev-server --port 3000 --inline --hot",
     "build": "webpack"
   },
   "repository": {
