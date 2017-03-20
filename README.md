@@ -1,1 +1,1 @@
-# My blog @ mattcubitt.github.io
+# mattcubitt.github.io
