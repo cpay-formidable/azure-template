@@ -677,12 +677,17 @@
             padding-top: 0;
         }
 
+        .panel .textInput {
+            border: 0;
+            border-bottom: 2px solid blue;
+        }
+
         .buttons #continue {
             width: 100%;
             background: #0033A0;
             border: 2px solid #1F52BF;
-            border-radius: 7px;
-            height: 36px;
+            border-radius: 3px;
+            height: 45px;
         }
 
         .buttons #cancel {
@@ -693,8 +698,13 @@
             width: 100%;
             background: #0033A0;
             border: 2px solid #1F52BF;
-            border-radius: 7px;
-            height: 36px;
+            border-radius: 3px;
+            height: 45px;
+        }
+
+        .attrEntry.validate input:invalid {
+            outline: 0;
+            background-color: inherit;
         }
     </style>
 </head>
