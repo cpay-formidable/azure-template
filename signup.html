@@ -3,7 +3,7 @@
 <html>
 <head>
 
-    <title>User Details 3</title>
+    <title>Sign up v4</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -669,6 +669,7 @@
 
     <!--UI customisation-->
     <style>
+        /*LAYOUT*/
         .panel {
             background-color: #EEEEEE;
         }
@@ -682,9 +683,10 @@
         }
 
         .panel_layout {
-            padding: 20px;
+            padding: 20px 20px 300px;
         }
 
+        /*INPUTS*/
         .panel .attrEntry input {
             width: 100% !important;
             box-sizing: border-box;
@@ -711,28 +713,6 @@
             border-bottom: 2px solid #0033a0;
         }
 
-        .buttons #continue {
-            width: 100%;
-            background: #0033a0;
-            border: 2px solid #1F52BF;
-            border-radius: 3px;
-            height: 45px;
-            margin: 15px 0;
-        }
-
-        .buttons #cancel {
-            display: none;
-        }
-
-        .attrEntry .sendButton {
-            width: 100%;
-            background: #0033A0;
-            border: 2px solid #1F52BF;
-            border-radius: 3px;
-            height: 45px;
-            margin: 15px 0;
-        }
-
         .attrEntry.validate input:invalid {
             outline: 0;
             background-color: inherit;
@@ -741,6 +721,8 @@
 
         .attrEntry input:focus, .attrEntry input[autofocus] {
             background-color: inherit;
+            border: 0;
+            border-bottom: 2px solid #0033a0;
         }
 
         ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -754,6 +736,38 @@
         }
         :-moz-placeholder { /* Firefox 18- */
             color: #EEEEEE;
+        }
+
+        /*BUTTONS*/
+        .buttons #continue {
+            width: 100%;
+            background: #0033a0;
+            border: 2px solid #1F52BF;
+            border-radius: 3px;
+            height: 45px;
+            margin: 20px 0;
+        }
+
+        .buttons #cancel {
+            display: none;
+        }
+
+        .attrEntry .sendButton {
+            width: 100%;
+            background: #0033A0;
+            border: 2px solid #1F52BF;
+            border-radius: 3px;
+            height: 45px;
+            margin: 20px 0;
+        }
+
+        .attrEntry .verifyButton {
+            width: 100%;
+            background: #0033A0;
+            border: 2px solid #1F52BF;
+            border-radius: 3px;
+            height: 45px;
+            margin: 20px 0;
         }
     </style>
 </head>
