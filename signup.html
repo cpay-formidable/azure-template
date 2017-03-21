@@ -3,7 +3,7 @@
 <html>
 <head>
 
-    <title>Sign up v11</title>
+    <title>Sign up v12</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -792,9 +792,14 @@
   });
 </script>
 <script>
-  $('#email').ready(function() {
-    $('#email').attr('type', 'email');
-  });
+  var checkExist = setInterval(function() {
+    if ($('#email').length) {
+      $('#email').attr('type', 'email');
+      console.log("Exists!");
+      clearInterval(checkExist);
+    }
+    console.log("Doesnt Exists!");
+  }, 100);
 </script>
 </body>
 </html>
