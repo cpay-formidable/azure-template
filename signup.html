@@ -3,7 +3,7 @@
 <html>
 <head>
 
-    <title>User Details 2</title>
+    <title>User Details 3</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -681,18 +681,19 @@
             padding-top: 0;
         }
 
+        .panel_layout {
+            padding: 20px;
+        }
+
         .panel .attrEntry input {
             width: 100% !important;
             box-sizing: border-box;
+            padding: 0 0 5px 0;
         }
 
         .panel input[type=text].textInput {
             border: 0;
             border-bottom: 2px solid #0033a0;
-        }
-
-        .panel_layout {
-            padding: 20px;
         }
 
         .attrEntry input[type=text] {
@@ -716,6 +717,7 @@
             border: 2px solid #1F52BF;
             border-radius: 3px;
             height: 45px;
+            margin: 15px 0;
         }
 
         .buttons #cancel {
@@ -728,11 +730,13 @@
             border: 2px solid #1F52BF;
             border-radius: 3px;
             height: 45px;
+            margin: 15px 0;
         }
 
         .attrEntry.validate input:invalid {
             outline: 0;
             background-color: inherit;
+            border-color: #cb2027;
         }
 
         .attrEntry input:focus, .attrEntry input[autofocus] {
