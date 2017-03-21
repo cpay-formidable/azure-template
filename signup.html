@@ -3,7 +3,7 @@
 <html>
 <head>
 
-    <title>Sign up v14</title>
+    <title>Sign up v15</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -757,9 +757,6 @@
                 <div class="inner_container">
                     <div class="api_container normaltext">
                         <div id="api"></div>
-                        <script type="application/javascript">
-                            console.log('hello');
-                        </script>
                     </div>
                 </div>
             </td>
@@ -793,19 +790,6 @@
     }), 'undefined' != typeof $('#MicrosoftAccountExchange') &&
     $('#MicrosoftAccountExchange').text('Microsoft'), $('*').removeAttr('placeholder');
   });
-  console.log('asdasd');
-</script>
-<script>
-  var checkExist = setInterval(function() {
-    if ($('#email').length) {
-      $('#email').attr('type', 'email');
-      console.log("Exists!");
-      clearInterval(checkExist);
-    }
-    else {
-      console.log("Doesnt Exists!");
-    }
-  }, 100);
 </script>
 </body>
 </html>
