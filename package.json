@@ -1,0 +1,30 @@
+{
+  "name": "azure-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cpay-formidable/azure-template.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cpay-formidable/azure-template/issues"
+  },
+  "homepage": "https://github.com/cpay-formidable/azure-template#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "handlebars": "^4.0.10",
+    "handlebars-loader": "^1.5.0",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.5",
+    "style-ext-html-webpack-plugin": "^3.4.1",
+    "webpack": "^2.6.1"
+  }
+}
