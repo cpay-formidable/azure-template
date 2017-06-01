@@ -30,7 +30,10 @@ module.exports = {
               loader: 'css-loader'
             },
             {
-              loader: 'sass-loader' // compiles Sass to CSS
+              loader: 'sass-loader',
+              options: {
+                includePaths: [path.resolve(__dirname, 'node_modules/compass-mixins/lib')]
+              }
             }
           ]
         })
@@ -39,5 +42,5 @@ module.exports = {
   },
   plugins: [new ExtractTextPlugin('styles.css')]
     .concat(templates)
-    .concat(new StyleExtHtmlWebpackPlugin('styles.css'))
+    .concat(new StyleExtHtmlWebpackPlugin({ file: 'styles.css', minify: true }))
 };

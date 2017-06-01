@@ -1,0 +1,13 @@
+rules:
+  indentation:
+    - 2
+    -
+      size: 2
+  class-name-format:
+    - 0
+  force-element-nesting:
+    - 0
+  force-pseudo-nesting:
+    - 0
+  no-ids:
+    - 0
