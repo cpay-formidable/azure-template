@@ -1,0 +1,34 @@
+// Typography
+
+$costco-blue: #0e60a9;
+$costco-dark-blue: #0033a0;
+$costco-red: #c8102e;
+$success: rgba(31, 213, 51, 1);
+$white: #fff;
+$grey: #eee;
+$dark-grey: #ccc;
+$darker-grey: #aaa;
+$black: #231f20;
+$task-color: #78a3ff;
+$icon-color: #037aff;
+$warning-color: #ffffed;
+$disabled-color: #839bd3;
+
+// Typography
+$font-size: 16px;
+$font-small: $font-size * .707;
+$font-normal: $font-size;
+$font-large: $font-size * 1.414;
+$font-xlarge: $font-size * 2;
+
+$font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+$text-color: $black;
+$text-color-secondary: lighten($black, .8);
+$placeholder-color: #cdced2;
+
+// Button
+$button-color: $costco-dark-blue;
+$button-disabled-color: $costco-dark-blue;
+$button-text-color: $white;
+$button-disabled-text-color: $disabled-color;

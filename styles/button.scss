@@ -1,0 +1,49 @@
+@import 'variables';
+
+button,
+.accountButton,
+.buttons button {
+  background: $button-color;
+  border: 1px solid $button-text-color;
+  border-radius: 7px;
+  border-width: 1px;
+  color: $button-text-color;
+  font-family: $font-family;
+  font-size: 100%;
+  font-weight: 100;
+  height: 44px;
+  line-height: 35px;
+  margin: 0 0 25px;
+  min-width: 50px;
+  padding: 0 40px;
+  transition: background 250ms ease 0s;
+  user-select: none;
+  width: calc(100% - 35px);
+
+  &:disabled,
+  &[disabled] {
+    background-color: $button-color;
+    border-color: $disabled-color;
+    color: $disabled-color;
+  }
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+.accountButton,
+.accountButton:hover {
+  background-repeat: no-repeat;
+  border: 1px solid $button-text-color;
+}
+
+
+.accountButton:hover {
+  box-shadow: 0 0 0;
+}
+
+.accountButton:focus {
+  outline: transparent;
+}

@@ -1,0 +1,23 @@
+@import 'variables';
+
+$font-sizes: (
+  h1: $font-xlarge,
+  h2: $font-large,
+  p: $font-normal,
+  small: $font-small
+);
+
+@each $header, $font-size in $font-sizes {
+  #{$header} {
+    font-size: $font-size;
+  }
+}
+
+.intro {
+  color: $white;
+  font-size: $font-xlarge;
+  font-weight: 100;
+  letter-spacing: .4px;
+  margin-bottom: 25px;
+  margin-top: 90px;
+}
