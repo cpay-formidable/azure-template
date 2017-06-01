@@ -3,7 +3,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const StyleExtHtmlWebpackPlugin = require('style-ext-html-webpack-plugin');
 
-const templates = ['signup_provider_selection'].map(template => {
+const templates = ['signup_provider_selection', 'signup'].map(template => {
   return new HtmlWebpackPlugin({
     filename: template + '.html',
     template: 'templates/' + template + '.hbs'
