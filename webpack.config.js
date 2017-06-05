@@ -1,12 +1,19 @@
 const path = require('path');
+const fs = require('fs');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const StyleExtHtmlWebpackPlugin = require('style-ext-html-webpack-plugin');
 
-const templates = ['signup_provider_selection', 'signup', 'signup_social'].map(template => {
+const TEMPLATE_EXT = '.hbs';
+
+const templateFs = fs
+  .readdirSync(path.resolve(__dirname, 'templates'))
+  .filter(file => path.extname(file) === TEMPLATE_EXT);
+
+const templates = templateFs.map(template => {
   return new HtmlWebpackPlugin({
-    filename: template + '.html',
-    template: 'templates/' + template + '.hbs'
+    filename: template.replace('.hbs', '.html'),
+    template: 'templates/' + template
   });
 });
 
