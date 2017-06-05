@@ -3,13 +3,13 @@
 $font-sizes: (
   h1: $font-xlarge,
   h2: $font-large,
-  p: $font-normal,
   small: $font-small
 );
 
 @each $header, $font-size in $font-sizes {
   #{$header} {
     font-size: $font-size;
+    line-height: 1.2;
   }
 }
 
@@ -20,4 +20,5 @@ $font-sizes: (
   letter-spacing: .4px;
   margin-bottom: 25px;
   margin-top: 90px;
+  text-align: center;
 }

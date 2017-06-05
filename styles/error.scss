@@ -1,0 +1,28 @@
+@import 'variables';
+
+.error-page-content {
+  align-items: center;
+  color: $white;
+  padding: 90px 25px 25px;
+  text-align: center;
+
+  h2 {
+    font-size: $font-xlarge;
+    margin-bottom: 50px;
+  }
+
+  .error-page-help {
+    margin-bottom: 25px;
+  }
+
+  .error-page-messagedetails {
+    font-size: $font-small;
+    opacity: 0.9;
+  }
+}
+
+.verificationInfoText,
+.verificationErrorText,
+.verificationSuccessText {
+  margin-bottom: 10px;
+}

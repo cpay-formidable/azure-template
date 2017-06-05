@@ -68,7 +68,7 @@ input {
     display: none;
   }
 
-  .helpText {
+  .helpText, .error.itemLevel {
     background-color: $costco-red;
     color: $white;
     font-size: .9em;
@@ -78,6 +78,7 @@ input {
     padding: 0;
     transform: scale(.97) translateY(15px);
     transition: all 300ms;
+    visibility: hidden;
 
     &::after {
       border-color: $costco-red transparent transparent;
@@ -97,13 +98,9 @@ input {
       opacity: 1;
       padding: 10px;
       transform: scale(1) translateY(0);
-    }
-  }
+      visibility: visible;
 
-  .error.itemLevel {
-    color: $costco-red;
-    display: none;
-    font-size: .9em;
+    }
   }
 
   input:invalid {
